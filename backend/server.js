@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 // Fully configured CORS
 const corsOptions = {
-  origin: "https://ishascompetition.netlify.app",
+  origin: "https://ishasfund.netlify.app/",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
