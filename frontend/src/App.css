@@ -1,0 +1,225 @@
+/* General Container */
+.container {
+  padding: 20px;
+  background-color: #f4f7fb;
+  /* Light grayish blue background */
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #1a73e8;
+  /* Soft blue */
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Fund & Expense Form Styles */
+.fundForm {
+  background-color: #ffbb33;
+  /* Warm orange */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.expenceForm {
+  background-color: #4caf50;
+  /* Fresh green */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.input,
+.select {
+  width: 200px;
+  border-radius: 8px;
+  border: 1px solid #4caf50;
+  /* Fresh green border */
+  padding: 10px;
+}
+
+button.ant-btn-primary {
+  background-color: #52c41a;
+  border-color: #52c41a;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+
+button.ant-btn-primary:hover {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+/* Table Title */
+.table-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+/* Stats Cards */
+.stats-card {
+  background-color: #ff7a45;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-out;
+}
+
+.stats-card h2 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Table Styles */
+.funds-table,
+.expenses-table {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ant-table-thead>tr>th {
+  background-color: #1a73e8;
+  /* Soft blue */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ant-table-tbody>tr>td {
+  text-align: center;
+  padding: 12px;
+}
+
+.ant-table-tbody>tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.ant-table-thead>tr>th,
+.ant-table-tbody>tr>td {
+  font-size: 1rem;
+}
+
+/* Table Styling for Fund Table */
+.fund-table .ant-table-thead th {
+  background-color: #4caf50;
+}
+
+.expense-table .ant-table-thead th {
+  background-color: #ff5722;
+  /* Vibrant Red */
+}
+
+.fund-table .ant-table {
+  border: 1px solid #f0f0f0;
+}
+
+.expense-table .ant-table {
+  border: 1px solid #f0f0f0;
+}
+
+/* Search Input */
+.ant-input-search {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #4caf50;
+  padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input,
+  .select {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+  }
+
+  .stats-card {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .fundForm,
+  .expenceForm {
+    width: 100%;
+    padding: 15px;
+  }
+
+  button.ant-btn-primary {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .table-title {
+    font-size: 1.5rem;
+  }
+
+  .ant-table-thead>tr>th {
+    font-size: 0.9rem;
+  }
+
+  .ant-table-tbody>tr>td {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
